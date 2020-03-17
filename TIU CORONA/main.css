@@ -1,0 +1,377 @@
+*{margin: 0; padding: 0;}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(7, 200px);
+    grid-template-rows: repeat(7, 200px);
+    grid-template-areas: 
+    "Logo Nazov Nazov Nazov Nav Nav Nav"
+    "Text1 Text1 Text1 Foto1 Text2 Text2 Text2"
+    "Text1 Text1 Text1 Foto2 Text2 Text2 Text2"
+    "Text3 Text3 Text4 Text4 Text4 Foto3 Foto4"
+    "Text3 Text3 Text4 Text4 Text4 Text5 Text5"
+    "Foto5 Foto5 Text4 Text4 Text4 Text5 Text5"
+    "Foto5 Foto5 Foto6 Foto7 Foto8 Text5 Text5";
+}
+
+#Logo {
+    grid-area: Logo;
+    background-image: url(0cd.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-color: rgb(102, 101, 101);
+}
+
+#Nazov {
+    display: grid;
+    grid-area: Nazov;
+    background-color: rgb(102, 101, 101);
+}
+
+#Nazov hgroup {
+    place-self: center;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+    font-size: 25px;
+
+}
+
+
+
+
+/*************************NAVIGACIA***********************************/
+
+
+
+
+
+nav {
+    display: grid;
+    grid-area: Nav;
+    background-color: rgb(102, 101, 101);
+}
+
+nav ul {
+    place-self: center;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    font-family: 'Krona One', sans-serif;
+    font-size: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:not(:first-child) {
+    margin-left: 20px;
+
+}
+
+
+
+
+
+/********************************************TEXT**************************************************/
+
+
+
+
+/********TEXT1*******/
+
+.Text1 {
+    grid-area: Text1;
+    display: inline-block;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.Text1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098D1;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.Text1:hover {
+    color: white;
+}
+
+.Text1:hover:before {
+    transform: scaleX(1);
+}
+
+
+
+
+/********TEXT2*******/
+
+
+
+.Text2 {
+    grid-area: Text2;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.Text2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098D1;
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.Text2:hover {
+    color: white;
+}
+
+.Text2:hover:before {
+    transform: scaleX(1);
+}
+
+
+
+
+/********TEXT3*******/
+
+
+
+.Text3 {
+    grid-area: Text3;
+    display: inline-block;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.Text3:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098D1;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.Text3:hover {
+    color: white;
+}
+
+.Text3:hover:before {
+    transform: scaleX(1);
+}
+
+
+/********TEXT4*******/
+
+
+.Text4 {
+    grid-area: Text4;
+    font-family: 'Krona One', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.Text4:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098D1;
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.Text4:hover {
+    color: white;
+}
+
+.Text4:hover:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.Text4 ul {
+    max-width: 550px;
+    margin: 0 auto;
+    
+    color: black;
+    font-family: 'Krona One', sans-serif;
+    font-size: 21px;
+    
+}
+
+.Text4 ul li {
+    text-align: justify;
+
+}
+
+.Text4 ul li:not(:first-child) {
+    margin-top: 22px;
+
+}
+
+
+
+
+
+/********TEXT5*******/
+
+
+
+.Text5 {
+    grid-area: Text5;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.Text5:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098D1;
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.Text5:hover {
+    color: white;
+}
+
+.Text5:hover:before {
+    transform: scaleX(1);
+}
+
+
+h3 {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Krona One', sans-serif;
+}
+
+p {
+    color: black;
+    font-family: 'Krona One', sans-serif;
+    text-align: center;
+    font-size: 17px;
+}
+
+
+
+
+/*************************************************FOTO**********************************************/
+
+.Foto5 {
+    grid-area: Foto5;
+    background-image: url(0cd.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+
+}
+
+nav ul li a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #2098D1;
+    height: 4px;
+    transition-property: left, right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+nav ul li a:hover:before {
+    left: 0;
+    right: 0;
+  }
+
+nav ul li a:hover {
+    transition: 0.5s;
+    color: #2098D1;
+}
