@@ -1,6 +1,13 @@
 *{margin: 0; padding: 0;}
 
 body {
+    width: 1600px;
+
+}
+
+.wrapper {
+    width: 1400px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(7, 200px);
     grid-template-rows: repeat(7, 200px);
@@ -16,7 +23,7 @@ body {
 
 #Logo {
     grid-area: Logo;
-    background-image: url(0cd.png);
+    background-image: url(medic.png);
     background-repeat:no-repeat;
     background-size:100% 100%;
     background-color: rgb(102, 101, 101);
@@ -154,7 +161,11 @@ nav ul li a:hover {
     transform: scaleX(1);
 }
 
-
+.Text1 p {
+    width: 550px;
+    margin: 0 auto;
+    text-align: justify;
+}
 
 
 /********TEXT2*******/
@@ -198,8 +209,13 @@ nav ul li a:hover {
 }
 
 .Text2 p {
-    font-size: 20px;
+    font-size: 18px;
+    width: 550px;
+    margin: 0 auto;
+    text-align: justify;
 }
+
+
 
 
 
@@ -244,8 +260,10 @@ nav ul li a:hover {
 }
 
 .Text3 p {
-    font-size: 19px;
-
+    font-size: 17.5px;
+    width: 350px;
+    margin: 0 auto;
+    text-align: justify;
 }
 
 
@@ -356,8 +374,16 @@ nav ul li a:hover {
     transform: scaleX(1);
 }
 
+.Text5 p {
+    font-size: 17px;
+    width: 350px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
 
 h3 {
+    margin-top: 5px;
     text-align: center;
     font-size: 35px;
     font-family: 'Krona One', sans-serif;
@@ -385,6 +411,20 @@ p {
 .Foto2 {
     grid-area: Foto2;
     background-image: url(DW.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
+.Foto3 {
+    grid-area: Foto3;
+    background-image: url(teplota.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
+.Foto4 {
+    grid-area: Foto4;
+    background-image: url(img_492293.png);
     background-repeat:no-repeat;
     background-size:100% 100%;
 }
