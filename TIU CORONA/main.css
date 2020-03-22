@@ -75,273 +75,6 @@ nav ul li:not(:first-child) {
 
 }
 
-
-
-
-
-/********************************************TEXT**************************************************/
-
-
-
-
-/********TEXT1*******/
-
-.Text1 {
-    grid-area: Text1;
-    display: inline-block;
-    display: inline-block;
-    vertical-align: middle;
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    transition-property: color;
-    transition-duration: 0.3s;
-}
-
-.Text1:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #2098D1;
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-}
-
-.Text1:hover {
-    color: white;
-}
-
-.Text1:hover:before {
-    transform: scaleX(1);
-}
-
-
-
-
-/********TEXT2*******/
-
-
-
-.Text2 {
-    grid-area: Text2;
-    display: inline-block;
-    vertical-align: middle;
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    transition-property: color;
-    transition-duration: 0.3s;
-}
-
-.Text2:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #2098D1;
-    transform: scaleX(0);
-    transform-origin: 100% 50%;
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-}
-
-.Text2:hover {
-    color: white;
-}
-
-.Text2:hover:before {
-    transform: scaleX(1);
-}
-
-
-
-
-/********TEXT3*******/
-
-
-
-.Text3 {
-    grid-area: Text3;
-    display: inline-block;
-    display: inline-block;
-    vertical-align: middle;
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    transition-property: color;
-    transition-duration: 0.3s;
-}
-
-.Text3:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #2098D1;
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-}
-
-.Text3:hover {
-    color: white;
-}
-
-.Text3:hover:before {
-    transform: scaleX(1);
-}
-
-
-/********TEXT4*******/
-
-
-.Text4 {
-    grid-area: Text4;
-    font-family: 'Krona One', sans-serif;
-    display: inline-block;
-    vertical-align: middle;
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    transition-property: color;
-    transition-duration: 0.3s;
-}
-
-.Text4:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #2098D1;
-    transform: scaleY(0);
-    transform-origin: 50% 0;
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-}
-
-.Text4:hover {
-    color: white;
-}
-
-.Text4:hover:before {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-}
-
-.Text4 ul {
-    max-width: 550px;
-    margin: 0 auto;
-    
-    color: black;
-    font-family: 'Krona One', sans-serif;
-    font-size: 21px;
-    
-}
-
-.Text4 ul li {
-    text-align: justify;
-
-}
-
-.Text4 ul li:not(:first-child) {
-    margin-top: 22px;
-
-}
-
-
-
-
-
-/********TEXT5*******/
-
-
-
-.Text5 {
-    grid-area: Text5;
-    display: inline-block;
-    vertical-align: middle;
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    transition-property: color;
-    transition-duration: 0.3s;
-}
-
-.Text5:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #2098D1;
-    transform: scaleX(0);
-    transform-origin: 100% 50%;
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-}
-
-.Text5:hover {
-    color: white;
-}
-
-.Text5:hover:before {
-    transform: scaleX(1);
-}
-
-
-h3 {
-    text-align: center;
-    font-size: 35px;
-    font-family: 'Krona One', sans-serif;
-}
-
-p {
-    color: black;
-    font-family: 'Krona One', sans-serif;
-    text-align: center;
-    font-size: 17px;
-}
-
-
-
-
-/*************************************************FOTO**********************************************/
-
-.Foto5 {
-    grid-area: Foto5;
-    background-image: url(0cd.png);
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
 nav ul li a {
     display: inline-block;
     vertical-align: middle;
@@ -375,3 +108,317 @@ nav ul li a:hover {
     transition: 0.5s;
     color: #2098D1;
 }
+
+
+
+/********************************************TEXT**************************************************/
+
+
+
+
+/********TEXT1*******/
+
+.Text1 {
+    grid-area: Text1;
+    display: inline-block;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+.Text1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098D1;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.Text1:hover {
+    color: white;
+}
+
+.Text1:hover:before {
+    transform: scaleX(1);
+}
+
+
+
+
+/********TEXT2*******/
+
+
+
+.Text2 {
+    grid-area: Text2;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.5s;
+    
+}
+
+.Text2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098D1;
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.Text2:hover {
+    color: white;
+}
+
+.Text2:hover:before {
+    transform: scaleX(1);
+}
+
+.Text2 p {
+    font-size: 20px;
+}
+
+
+
+
+/********TEXT3*******/
+
+
+
+.Text3 {
+    grid-area: Text3;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+.Text3:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098D1;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.Text3:hover {
+    color: white;
+}
+
+.Text3:hover:before {
+    transform: scaleX(1);
+}
+
+.Text3 p {
+    font-size: 19px;
+
+}
+
+
+/********TEXT4*******/
+
+
+.Text4 {
+    grid-area: Text4;
+    font-family: 'Krona One', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+.Text4:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098D1;
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.Text4:hover {
+    color: white;
+}
+
+.Text4:hover:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.Text4 h3 {
+    margin-top: 10px;
+
+}
+
+.Text4 ul {
+    max-width: 550px;
+    margin: 35px;
+    color: black;
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+    
+}
+
+.Text4 ul li {
+    text-align: justify;
+
+}
+
+.Text4 ul li:not(:first-child) {
+    margin-top: 20px;
+
+}
+
+
+
+
+
+/********TEXT5*******/
+
+
+
+.Text5 {
+    grid-area: Text5;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+.Text5:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098D1;
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.Text5:hover {
+    color: white;
+}
+
+.Text5:hover:before {
+    transform: scaleX(1);
+}
+
+
+h3 {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Krona One', sans-serif;
+}
+
+p {
+    color: black;
+    font-family: 'Krona One', sans-serif;
+    text-align: center;
+    font-size: 17px;
+}
+
+
+
+
+/*************************************************FOTO**********************************************/
+
+.Foto1 {
+    grid-area: Foto1;
+    background-image: url(Corona.jpg);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
+.Foto2 {
+    grid-area: Foto2;
+    background-image: url(DW.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
+.Foto5 {
+    grid-area: Foto5;
+    background-image: url(104831.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.Foto6 {
+    grid-area: Foto6;
+    background-image: url(ruky.jpg);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
+.Foto7 {
+    grid-area: Foto7;
+    background-image: url(ruska.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
+.Foto8 {
+    grid-area: Foto8;
+    background-image: url(3-512.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
